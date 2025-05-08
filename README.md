@@ -19,9 +19,33 @@ Proteins play critical roles in biological systems, and understanding their prop
 
 ---
 
-## Code Availability
+## Usage Instructions
 
-The **full implementation of BridgeNet** is currently under preparation and will be released within **one week**. Stay tuned for updates! 
+After running `main.py`, the script will automatically execute the following six methods to perform different downstream prediction tasks and output the corresponding performance metrics:
+
+- `tAMPer()`
+- `DeepFRI(task='EC')`
+- `DeepFRI(task='BP')`
+- `DeepFRI(task='MF')`
+- `DeepFRI(task='CC')`
+- `CoEnzyme()`
+
+### Required Third-Party Libraries
+
+Ensure the following libraries are installed before running the script:
+
+1. **Python**: The base programming language required to run the script.
+2. **Torch**: A machine learning library used for building and training deep learning models.
+3. **Torch_geometric**: Extends PyTorch to handle graph-based data, enabling graph neural network operations.
+4. **Numpy**: Used for numerical computations, such as handling arrays and matrices.
+5. **Sklearn**: Provides tools for machine learning tasks like performance evaluation and data preprocessing.
+6. **Tqdm**: Displays progress bars for loops, making it easier to monitor runtime progress.
+7. **Math**: Provides basic mathematical functions and operations.
+
+### File Organization
+
+- **Encoded Data**: Preprocessed `.pkl` files should be placed in the `tmp` directory.
+- **Model Files**: Downstream model files should be placed in the `models` directory.
 
 ---
 
